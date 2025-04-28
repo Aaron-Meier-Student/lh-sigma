@@ -21,7 +21,7 @@ const inputs = [
         value: userName,
         func: (input) => {
             userName = input;
-            document.querySelector("#login").innerHTML = userName;
+            document.querySelector("#login").innerHTML = `Custom Username: ${userName}`;
         },
     },
     {
