@@ -29,11 +29,9 @@ const inputs = [
         text: "Force Skip",
         func: () => {
             showMessage("Force Skipping Song!");
-            for (let i = 1; i <= 5; i++) {
-                fetch(`/vote-to-skip?user=${i}`, {
-                    method: "POST",
-                });
-            }
+            fetch(`/vote-to-skip?user=${Math.random()}`, {
+                method: "POST",
+            });
         },
     },
 ];
