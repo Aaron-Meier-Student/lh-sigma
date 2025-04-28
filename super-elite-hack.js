@@ -20,7 +20,8 @@ const inputs = [
         placeholder: "Custom Username",
         value: userName,
         func: (input) => {
-            userName = usernameInput.value;
+            userName = input;
+            document.querySelector("#login").innerHTML = userName;
         },
     },
     {
@@ -71,3 +72,5 @@ newStyle.innerHTML = `
     }
 `;
 document.head.appendChild(newStyle);
+
+SignedIn = true;
