@@ -26,9 +26,9 @@ const inputs = [
     },
     {
         type: "button",
-        text: "Force Skip",
+        text: "Add Fake Vote",
         func: () => {
-            showMessage("Force Skipping Song!");
+            showMessage("Added Vote!");
             fetch(`/vote-to-skip?user=${Math.random()}`, {
                 method: "POST",
             });
