@@ -74,3 +74,4 @@ newStyle.innerHTML = `
 document.head.appendChild(newStyle);
 
 SignedIn = true;
+document.querySelector("#login").innerHTML = `Custom Username: ${userName}`;
